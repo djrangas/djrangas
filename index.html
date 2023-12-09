@@ -4,164 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>DJ Rangas</title>
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    <!-- Font Awesome CSS (for icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
-    <!-- Custom CSS -->
     <style>
-        body {
-            background-color: #808080; /* Gray background */
-            color: #ffffff; /* White text */
-            transition: background-color 0.3s, color 0.3s; /* Transition for background and text color changes */
-            margin-bottom: 60px; /* Ensure space for the fixed button */
-        }
-
-        .logo {
-            width: 300px; /* Adjust the width as needed */
-            margin-bottom: 20px; /* Add spacing below the logo */
-            transition: filter 0.3s; /* Transition for filter property changes */
-        }
-
-        /* Add this style to change the color of the mail link */
-        #contact a {
-            color: #fff; /* White color for the mail link in light mode */
-        }
-
-        /* Add this style to change the color of the mail link in dark mode */
-        .dark-mode #contact a {
-            color: #000; /* Black color for the mail link in dark mode */
-        }
-
-        /* Custom dark mode styles */
-        .dark-mode {
-            background-color: #ffffff; /* Dark background color */
-            color: #000000; /* Light text color */
-        }
-
-        .dark-mode .logo {
-            filter: invert(1); /* Invert colors for dark mode logo */
-        }
-
-        .dark-mode a {
-            color: #bbb; /* Light text color for links in dark mode */
-        }
-
-        /* Add this style to change social media icon color in dark mode */
-        .dark-mode .social-icons a {
-            color: #000000 !important; /* Black color for social media icons in dark mode */
-        }
-
-        /* Corner button styles */
-        #darkModeToggle {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            z-index: 1000;
-        }
-
-        /* Add your custom styles here */
-
-        /* Example of a media query for adjusting styles on small screens */
-        @media (max-width: 576px) {
-            /* Add styles for small screens */
-        }
-
-        /* Sun and moon icons */
-        #sunIcon,
-        #moonIcon {
-            display: none;
-        }
-
-        .dark-mode #moonIcon {
-            display: inline;
-        }
-
-        .dark-mode #sunIcon {
-            display: none;
-        }
-
-        /* Modal styling */
-        .modal-content {
-            background-color: #333; /* Background color for the modal content */
-            color: #fff; /* Text color for the modal content */
-        }
-
-        /* YouTube Subscribe Button styling */
-        .youtube-subscribe-btn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-        }
+        body{background:#808080;color:#fff;transition:background 0.3s,color 0.3s;margin-bottom:60px;}.logo{width:300px;margin-bottom:20px;transition:filter 0.3s;}
+        #contact a{color:#fff;}.dark-mode #contact a{color:#000;}.dark-mode{background:#fff;color:#000;}.dark-mode .logo{filter:invert(1);}.dark-mode a{color:#bbb;}.dark-mode .social-icons a{color:#000 !important;}
+        #darkModeToggle{position:fixed;bottom:10px;right:10px;z-index:1000;}.modal-content{background:#333;color:#fff;}.youtube-subscribe-btn{display:flex;justify-content:center;align-items:center;margin-top:20px;}
     </style>
 </head>
 <body>
-
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">DJ Rangas</a>
+        <a class="navbar-brand" href="index.html">DJ Rangas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link  active" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Music</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
             </ul>
         </div>
     </nav>
-
-    <!-- Content Section -->
     <div class="container mt-5 text-center d-flex align-items-center flex-column">
-        <!-- Logo and content -->
         <img src="Ass/images/logo-no-background.svg" alt="DJ Rangas Logo" class="mx-auto d-block logo">
         <h1>Welcome to DJ Rangas</h1>
-
-        <!-- Contact Section -->
         <section id="contact" class="mt-5">
             <h2>Contact</h2>
             <p>Connect with me on social media:</p>
-
-            <!-- Social Media Icons -->
             <div class="social-icons">
                 <a href="https://github.com/djrangas" target="_blank" class="text-white mr-3"><i class="fab fa-github fa-2x"></i></a>
                 <a href="https://www.youtube.com/channel/UC0ySu3qAEVxpajftdl3QjuQ" target="_blank" class="text-white mr-3"><i class="fab fa-youtube fa-2x"></i></a>
                 <a href="https://www.instagram.com/djrangas/" target="_blank" class="text-white mr-3"><i class="fab fa-instagram fa-2x"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=61550626917829" target="_blank" class="text-white mr-3"><i class="fab fa-facebook-f fa-2x"></i></a>
                 <a href="https://soundcloud.com/djrangas-000000?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" class="text-white"><i class="fab fa-soundcloud fa-2x"></i></a>
-                <!-- Add more social media links as needed -->
             </div>
             <hr>
             <p>Email: <a href="mailto:htooaunklinn12@gmail.com"><i class="fas fa-envelope"></i> Send Mail</a></p>
             <p>Phone: +959974448285</p>
         </section>
-
     </div>
-
-    <!-- Dark mode toggle button with sun and moon icons -->
     <button id="darkModeToggle" class="btn btn-secondary mb-3">
-        <i id="sunIcon" class="fas fa-sun"></i> <!-- Sun icon -->
-        <i id="moonIcon" class="fas fa-moon"></i> <!-- Moon icon -->
+        <i id="sunIcon" class="fas fa-sun"></i><i id="moonIcon" class="fas fa-moon"></i>
     </button>
-
-    <!-- Modal for YouTube Subscribe Button -->
     <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -171,48 +55,28 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <!-- Modal Body -->
                 <div class="modal-body text-center">
                     <p>Subscribe to my YouTube channel for the latest updates and videos!</p>
-                    <!-- Button to go to YouTube channel -->
-                    <button type="button" class="btn btn-primary mt-3" onclick="window.location.href='https://www.youtube.com/channel/UC0ySu3qAEVxpajftdl3QjuQ';">Go to YouTube</button>
+                    <button type="button" class="btn btn-danger mt-3" onclick="window.location.href='https://www.youtube.com/channel/UC0ySu3qAEVxpajftdl3QjuQ';">Go to YouTube</button>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- YouTube Subscribe Button API script -->
     <script src="https://apis.google.com/js/platform.js"></script>
-
-    <!-- Custom JavaScript for dark mode toggle and modal trigger -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Get elements
             const darkModeToggle = document.getElementById('darkModeToggle');
             const subscribeModal = new bootstrap.Modal(document.getElementById('subscribeModal'));
-
-            // Check dark mode preference from local storage
             const darkModeEnabled = localStorage.getItem('darkMode') === 'enabled';
-
-            // Set initial state based on preference
             setDarkMode(darkModeEnabled);
-
-            // Toggle dark mode on button click
             darkModeToggle.addEventListener('click', function () {
                 const newDarkMode = document.body.classList.contains('dark-mode') ? false : true;
                 setDarkMode(newDarkMode);
             });
-
-            // Show the YouTube Subscribe Button modal
             subscribeModal.show();
-
-            // Function to set dark mode
             function setDarkMode(enable) {
                 if (enable) {
                     document.body.classList.add('dark-mode');
@@ -223,27 +87,21 @@
                 }
                 updateStyles(enable);
             }
-
-            // Function to update additional styles
             function updateStyles(isDarkMode) {
                 const logo = document.querySelector('.logo');
                 const logoPath = isDarkMode ? 'Ass/images/logo-no-background.svg' : 'Ass/images/logo-no-background.svg';
                 logo.setAttribute('src', logoPath);
-
-                // Toggle sun and moon icons
                 const sunIcon = document.getElementById('sunIcon');
                 const moonIcon = document.getElementById('moonIcon');
-
                 if (isDarkMode) {
-                    sunIcon.style.display = 'none'; // Hide sun in dark mode
-                    moonIcon.style.display = 'inline'; // Show moon in dark mode
+                    sunIcon.style.display = 'none';
+                    moonIcon.style.display = 'inline';
                 } else {
-                    sunIcon.style.display = 'inline'; // Show sun in light mode
-                    moonIcon.style.display = 'none'; // Hide moon in light mode
+                    sunIcon.style.display = 'inline';
+                    moonIcon.style.display = 'none';
                 }
             }
         });
     </script>
-
 </body>
 </html>
