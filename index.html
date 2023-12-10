@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>DJ Rangas</title>
+    <meta name="description" content="Welcome to DJ Rangas. Connect with DJ Rangas on social media.">
+    <meta name="keywords" content="DJ Rangas, music, social media">
+    <meta name="author" content="Your Name">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <style>
-        body{background:#808080;color:#fff;transition:background 0.3s,color 0.3s;margin-bottom:60px;}.logo{width:300px;margin-bottom:20px;transition:filter 0.3s;}
-        #contact a{color:#fff;}.dark-mode #contact a{color:#000;}.dark-mode{background:#fff;color:#000;}.dark-mode .logo{filter:invert(1);}.dark-mode a{color:#bbb;}.dark-mode .social-icons a{color:#000 !important;}
-        #darkModeToggle{position:fixed;bottom:10px;right:10px;z-index:1000;}.modal-content{background:#333;color:#fff;}.youtube-subscribe-btn{display:flex;justify-content:center;align-items:center;margin-top:20px;}
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="index.html">DJ Rangas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,31 +21,83 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
             </ul>
         </div>
     </nav>
-    <div class="container mt-5 text-center d-flex align-items-center flex-column">
-        <img src="Ass/images/logo-no-background.svg" alt="DJ Rangas Logo" class="mx-auto d-block logo">
-        <h1>Welcome to DJ Rangas</h1>
-        <section id="contact" class="mt-5">
-            <h2>Contact</h2>
-            <p>Connect with me on social media:</p>
-            <div class="social-icons">
-                <a href="https://github.com/djrangas" target="_blank" class="text-white mr-3"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://www.youtube.com/channel/UC0ySu3qAEVxpajftdl3QjuQ" target="_blank" class="text-white mr-3"><i class="fab fa-youtube fa-2x"></i></a>
-                <a href="https://www.instagram.com/djrangas/" target="_blank" class="text-white mr-3"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61550626917829" target="_blank" class="text-white mr-3"><i class="fab fa-facebook-f fa-2x"></i></a>
-                <a href="https://soundcloud.com/djrangas-000000?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" class="text-white"><i class="fab fa-soundcloud fa-2x"></i></a>
+    
+    <div class="container mt-1 text-center d-flex align-items-center flex-column">
+        <h1 class="scrolling-text">Welcome to DJ Rangas</h1>
+       
+        <section id="about" class="mt-1">
+            <div class="grid-container">
+                <div class="column">
+                    <img src="Ass/images/logo-no-background.svg" alt="DJ Rangas Logo" class="mx-auto d-block logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolores odio eveniet tempora harum. Nihil inventore exercitationem quos, harum, autem accusantium reiciendis totam mollitia dolor iure aliquam numquam libero optio.</p>
+                </div>
+                <div class="video-container column">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/y5OA-DS7igM" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
-            <hr>
-            <p>Email: <a href="mailto:htooaunklinn12@gmail.com"><i class="fas fa-envelope"></i> Send Mail</a></p>
-            <p>Phone: +959974448285</p>
+        </section>
+    <div>
+
+        <!-- Events Section -->
+<section id="events" class="mt-5">
+    <h2>Events</h2>
+    
+    <!-- Event Cards -->
+    <div class="event-cards">
+        <!-- Event Card 1 -->
+        <div class="event-card">
+            <img src="Ass/images/IMG_7701.PNG" alt="Event 1">
+            <h3>Event 1</h3>
+            <p>Date: February 31, 2023</p>
+            <p>Location: On Sun</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-primary" target="_blank">Buy Tickets</a>
+        </div>
+
+        <!-- Event Card 2 -->
+        <div class="event-card">
+            <img src="Ass/images/IMG_7701.PNG" alt="Event 2">
+            <h3>Event 2</h3>
+            <p>Date: February 31, 2023</p>
+            <p>Location: On Moon</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-primary" target="_blank">Buy Tickets</a>
+        </div>
+
+        <!-- Add more event cards as needed -->
+    </div>
+</section>
+
+
+        <section id="contact" class="mt-1">
+            <h2>Contact</h2>
+            <div class="grid-container">
+                <div class="column">
+                    <p>Connect with me on social media:</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/djrangas" target="_blank" class="text-white mr-3"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="https://www.youtube.com/channel/UC0ySu3qAEVxpajftdl3QjuQ" target="_blank" class="text-white mr-3"><i class="fab fa-youtube fa-2x"></i></a>
+                        <a href="https://www.instagram.com/djrangas/" target="_blank" class="text-white mr-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61550626917829" target="_blank" class="text-white mr-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+                        <a href="https://soundcloud.com/djrangas-000000?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" class="text-white"><i class="fab fa-soundcloud fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="column">
+                    <p>Email: <a href="mailto:htooaunklinn12@gmail.com"><i class="fas fa-envelope"></i> Send Mail</a></p>
+                    <p>Phone: +959974448285</p>
+                </div>
+            </div>
         </section>
     </div>
-    <button id="darkModeToggle" class="btn btn-secondary mb-3">
+
+    <button id="darkModeToggle" class="btn btn-secondary mb-3" aria-label="Toggle Dark Mode">
         <i id="sunIcon" class="fas fa-sun"></i><i id="moonIcon" class="fas fa-moon"></i>
     </button>
+
     <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -62,46 +114,15 @@
             </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <p>Powered by <strong>Mr. Htoo Aunk Linn</strong></p>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://apis.google.com/js/platform.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const darkModeToggle = document.getElementById('darkModeToggle');
-            const subscribeModal = new bootstrap.Modal(document.getElementById('subscribeModal'));
-            const darkModeEnabled = localStorage.getItem('darkMode') === 'enabled';
-            setDarkMode(darkModeEnabled);
-            darkModeToggle.addEventListener('click', function () {
-                const newDarkMode = document.body.classList.contains('dark-mode') ? false : true;
-                setDarkMode(newDarkMode);
-            });
-            subscribeModal.show();
-            function setDarkMode(enable) {
-                if (enable) {
-                    document.body.classList.add('dark-mode');
-                    localStorage.setItem('darkMode', 'enabled');
-                } else {
-                    document.body.classList.remove('dark-mode');
-                    localStorage.setItem('darkMode', 'disabled');
-                }
-                updateStyles(enable);
-            }
-            function updateStyles(isDarkMode) {
-                const logo = document.querySelector('.logo');
-                const logoPath = isDarkMode ? 'Ass/images/logo-no-background.svg' : 'Ass/images/logo-no-background.svg';
-                logo.setAttribute('src', logoPath);
-                const sunIcon = document.getElementById('sunIcon');
-                const moonIcon = document.getElementById('moonIcon');
-                if (isDarkMode) {
-                    sunIcon.style.display = 'none';
-                    moonIcon.style.display = 'inline';
-                } else {
-                    sunIcon.style.display = 'inline';
-                    moonIcon.style.display = 'none';
-                }
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
