@@ -9,95 +9,176 @@
     <meta name="author" content="Your Name">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    
+    
+    <style>
+        body {
+            background: #808080;
+            color: #fff;
+            transition: background 0.3s, color 0.3s;
+            margin-bottom: 60px;
+        }
+
+        .dark-mode {
+            background: #fff;
+            color: #000;
+        }
+
+        .dark-mode a {
+            color: #bbb;
+        }
+
+        .dark-mode .social-icons a {
+            color: #000 !important;
+        }
+
+        /* Open Alert */
+        .youtube-subscribe-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .modal-content {
+            background: #333;
+            color: #fff;
+        }
+        /* Open Alert End */
+
+        /* Nav Bar */
+        .fixed-top {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        /* Nav Bar End */
+
+        /* svglogo */
+        .svglogo {
+            width: 300px;
+            margin-bottom: 20px;
+            transition: filter 3s;
+        }
+
+        .dark-mode .svglogo {
+            filter: invert(1);
+        }
+        /* svglogo end */
+
+        /* About Section */
+        .about-container {
+            margin-top: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .column {
+            padding: 40px;
+            max-width: 700px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        /* About Section End */
+
+
+        /* Events Section */
+        #events {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .event-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .event-card {
+            max-width: 300px;
+            margin: 20px;
+            padding: 10px;
+            background: #333;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .dark-mode .event-card {
+            background: #333;
+            color: #fff;
+        }
+
+        .event-card img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .event-card .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .event-card .btn:hover {
+            background-color: #0056b3;
+        }
+        /* Events Section End */
+
+        /* Contact Section */
+        #contact {
+            margin-bottom: 100px;
+        }
+
+        #contact a {
+            color: #fff;
+        }
+
+        .dark-mode #contact a {
+            color: #000;
+        }
+        /* Contact Section End */
+
+        /* Dark/Light Toggle */
+        #darkModeToggle {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            z-index: 1000;
+        }
+        /* Dark/Light Toggle */
+
+        /* Footer */
+        .footer {
+            background: #333;
+            position: fixed;
+            bottom: 0;
+            height: 3%;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+        }
+        /* Footer End */
+
+    </style>
 </head>
+
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="index.html">DJ Rangas</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
-            </ul>
-        </div>
-    </nav>
-    
-    <div class="container mt-1 text-center d-flex align-items-center flex-column">
-        <h1 class="scrolling-text">Welcome to DJ Rangas</h1>
-       
-        <section id="about" class="mt-1">
-            <div class="grid-container">
-                <div class="column">
-                    <img src="Ass/images/logo-no-background.svg" alt="DJ Rangas Logo" class="mx-auto d-block logo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolores odio eveniet tempora harum. Nihil inventore exercitationem quos, harum, autem accusantium reiciendis totam mollitia dolor iure aliquam numquam libero optio.</p>
-                </div>
-                <div class="video-container column">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/y5OA-DS7igM" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </section>
-    <div>
 
-        <!-- Events Section -->
-<section id="events" class="mt-5">
-    <h2>Events</h2>
-    
-    <!-- Event Cards -->
-    <div class="event-cards">
-        <!-- Event Card 1 -->
-        <div class="event-card">
-            <img src="Ass/images/IMG_7701.PNG" alt="Event 1">
-            <h3>Event 1</h3>
-            <p>Date: February 31, 2023</p>
-            <p>Location: On Sun</p>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#" class="btn btn-primary" target="_blank">Buy Tickets</a>
-        </div>
-
-        <!-- Event Card 2 -->
-        <div class="event-card">
-            <img src="Ass/images/IMG_7701.PNG" alt="Event 2">
-            <h3>Event 2</h3>
-            <p>Date: February 31, 2023</p>
-            <p>Location: On Moon</p>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#" class="btn btn-primary" target="_blank">Buy Tickets</a>
-        </div>
-
-        <!-- Add more event cards as needed -->
-    </div>
-</section>
-
-
-        <section id="contact" class="mt-1">
-            <h2>Contact</h2>
-            <div class="grid-container">
-                <div class="column">
-                    <p>Connect with me on social media:</p>
-                    <div class="social-icons">
-                        <a href="https://github.com/djrangas" target="_blank" class="text-white mr-3"><i class="fab fa-github fa-2x"></i></a>
-                        <a href="https://www.youtube.com/channel/UC0ySu3qAEVxpajftdl3QjuQ" target="_blank" class="text-white mr-3"><i class="fab fa-youtube fa-2x"></i></a>
-                        <a href="https://www.instagram.com/djrangas/" target="_blank" class="text-white mr-3"><i class="fab fa-instagram fa-2x"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61550626917829" target="_blank" class="text-white mr-3"><i class="fab fa-facebook-f fa-2x"></i></a>
-                        <a href="https://soundcloud.com/djrangas-000000?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" class="text-white"><i class="fab fa-soundcloud fa-2x"></i></a>
-                    </div>
-                </div>
-                <div class="column">
-                    <p>Email: <a href="mailto:htooaunklinn12@gmail.com"><i class="fas fa-envelope"></i> Send Mail</a></p>
-                    <p>Phone: +959974448285</p>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <button id="darkModeToggle" class="btn btn-secondary mb-3" aria-label="Toggle Dark Mode">
-        <i id="sunIcon" class="fas fa-sun"></i><i id="moonIcon" class="fas fa-moon"></i>
-    </button>
-
+    <!-- Open Alert -->
     <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -114,15 +195,162 @@
             </div>
         </div>
     </div>
+    <!-- Open Alert End -->
 
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">DJ Rangas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Nav Bar End -->
+    
+        <!-- About Section -->
+            <section id="about" class="mt-5">
+                <div class="about-container">
+                    <div class="column">
+                        <img src="Ass/images/logo-no-background.svg" alt="DJ Rangas Logo" class="mx-auto d-block svglogo">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolores odio eveniet tempora harum. Nihil inventore exercitationem quos, harum, autem accusantium reiciendis totam mollitia dolor iure aliquam numquam libero optio.</p>
+                    </div>
+                    <div class="column">
+                        <iframe width="500" height="315" src="https://www.youtube.com/embed/y5OA-DS7igM" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+        <!-- About Section End -->
+        
+        <hr>
+
+        <!-- Events Section -->
+            <section id="events">
+                <h2>Events</h2>
+                
+                <!-- Event Cards -->
+                <div class="event-cards">
+                    <!-- Event Card 1 -->
+                    <div class="event-card">
+                        <img src="Ass/images/IMG_7701.PNG" alt="Event 1">
+                        <h3>Event 1</h3>
+                        <p>Date: February 31, 2023</p>
+                        <p>Location: On Sun</p>
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#" class="btn btn-primary" target="_blank">Buy Tickets</a>
+                    </div>
+
+                    <!-- Event Card 2 -->
+                    <div class="event-card">
+                        <img src="Ass/images/IMG_7701.PNG" alt="Event 2">
+                        <h3>Event 2</h3>
+                        <p>Date: February 31, 2023</p>
+                        <p>Location: On Moon</p>
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#" class="btn btn-primary" target="_blank">Buy Tickets</a>
+                    </div>
+
+                </div>
+            </section>
+        <!-- Events Section End -->
+    
+        <hr>
+
+        <!-- Contact Section -->
+        <section id="contact" class="text-center">
+            <h2>Contact</h2>
+
+                <!-- mini 1 -->
+                    <p>Connect with me on social media:</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/djrangas" target="_blank" class="text-white mr-3"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="https://www.youtube.com/channel/UC0ySu3qAEVxpajftdl3QjuQ" target="_blank" class="text-white mr-3"><i class="fab fa-youtube fa-2x"></i></a>
+                        <a href="https://www.instagram.com/djrangas/" target="_blank" class="text-white mr-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61550626917829" target="_blank" class="text-white mr-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+                        <a href="https://soundcloud.com/djrangas-000000?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" class="text-white"><i class="fab fa-soundcloud fa-2x"></i></a>
+                    </div>
+
+                    <hr>
+                    
+                <!-- mini 2 -->
+                    <p>Email: <a href="mailto:htooaunklinn12@gmail.com"><i class="fas fa-envelope"></i> Send Mail</a></p>
+                    <p>Phone: +959974448285</p>
+        </section>
+        <!-- Contact Section End -->
+
+    <!-- Dark/Light Toggle -->
+    <button id="darkModeToggle" class="btn btn-secondary mb-3" aria-label="Toggle Dark Mode">
+        <i id="sunIcon" class="fas fa-sun"></i><i id="moonIcon" class="fas fa-moon"></i>
+    </button>
+    <!-- Dark/Light Toggle End -->
+
+    <!-- Footer -->
     <footer class="footer">
         <p>Powered by <strong>Mr. Htoo Aunk Linn</strong></p>
     </footer>
+    <!-- Footer End -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://apis.google.com/js/platform.js"></script>
-    <script src="script.js"></script>
+    <script>
+                document.addEventListener('DOMContentLoaded', function () {
+            // Elements
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            const subscribeModal = new bootstrap.Modal(document.getElementById('subscribeModal'));
+
+            // Check Dark Mode State from Local Storage
+            const darkModeEnabled = localStorage.getItem('darkMode') === 'enabled';
+
+            // Set Dark Mode
+            setDarkMode(darkModeEnabled);
+
+            // Dark Mode Toggle Button Event Listener
+            darkModeToggle.addEventListener('click', function () {
+                const newDarkMode = document.body.classList.contains('dark-mode') ? false : true;
+                setDarkMode(newDarkMode);
+            });
+
+            // Show Subscribe Modal
+            subscribeModal.show();
+
+            // Dark Mode Function
+            function setDarkMode(enable) {
+                if (enable) {
+                    document.body.classList.add('dark-mode');
+                    localStorage.setItem('darkMode', 'enabled');
+                } else {
+                    document.body.classList.remove('dark-mode');
+                    localStorage.setItem('darkMode', 'disabled');
+                }
+                updateStyles(enable);
+            }
+
+            // Update Styles Function
+            function updateStyles(isDarkMode) {
+                const svglogo = document.querySelector('.svglogo');
+                const svglogoPath = isDarkMode ? 'Ass/images/logo-no-background.svg' : 'Ass/images/logo-no-background.svg';
+                svglogo.setAttribute('src', svglogoPath);
+
+                const sunIcon = document.getElementById('sunIcon');
+                const moonIcon = document.getElementById('moonIcon');
+
+                if (isDarkMode) {
+                    sunIcon.style.display = 'none';
+                    moonIcon.style.display = 'inline';
+                } else {
+                    sunIcon.style.display = 'inline';
+                    moonIcon.style.display = 'none';
+                }
+            }
+        });
+
+    </script>
 </body>
 </html>
