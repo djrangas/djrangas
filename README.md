@@ -1,6 +1,5 @@
 ## Hi there 👋
 <h1 align="center">Welcome to DJ Rangas</h1>
-### Blogs posts
 <!-- BLOG-POST-LIST:START 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
@@ -14,12 +13,12 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-
- <a href="https://youtube.com/@djrangas?si=4CWNxafP97WXixPe" target="_blank">YouTube</a>
- <a href="https://linkedin.com/in/dj-rangas-88561b312" target="_blank">LinkedIn</a>
- <a href="https://t.me/DJ_Rangas" target="_blank">Telegram</a>
- <a href="https://www.tiktok.com/@djrangas" target="_blank">TikTok</a>
-
+<ul>
+ <li><a href="https://youtube.com/@djrangas?si=4CWNxafP97WXixPe" target="_blank">YouTube</a></li>
+ <li><a href="https://linkedin.com/in/dj-rangas-88561b312" target="_blank">LinkedIn</a></li>
+ <li><a href="https://t.me/DJ_Rangas" target="_blank">Telegram</a></li>
+ <li><a href="https://www.tiktok.com/@djrangas" target="_blank">TikTok</a></li>
+</ul>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
