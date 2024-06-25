@@ -1,4 +1,3 @@
-## Hi there 👋
 <h1 align="center">Welcome to DJ Rangas</h1>
 <!-- BLOG-POST-LIST:START 
 - 🔭 I’m currently working on ...
