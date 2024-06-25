@@ -14,8 +14,12 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/dj-rangas-88561b312" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="dj-rangas-88561b312" height="30" width="40" /></a>
-<a href="https://www.youtube.com/c/djrangas" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="djrangas" height="30" width="40" /></a>
+
+ <a href="https://youtube.com/@djrangas?si=4CWNxafP97WXixPe" target="_blank">YouTube</a>
+ <a href="https://linkedin.com/in/dj-rangas-88561b312" target="_blank">LinkedIn</a>
+ <a href="https://t.me/DJ_Rangas" target="_blank">Telegram</a>
+ <a href="https://www.tiktok.com/@djrangas" target="_blank">TikTok</a>
+
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
