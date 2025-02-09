@@ -1,4 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
-    background-color: black;
+    background-color: #121212;
     color: white;
+    padding: 20px;
+}
+
+nav {
+    background-color: #3E2723;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+header {
+    background-color: brown;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 80px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 20px;
 }
