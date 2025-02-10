@@ -201,9 +201,13 @@ Commands:
 ## YouTube Download on MacOS
 ```powershell
 brew install yt-dlp # download package
-where yt-dlp # check package
+where yt-dlp # check package location
 yt-dlp -F "[URL link]" # list formats
 yt-dlp -f 140 "[URL link]" # download audio with m4a format
+# donwload mp3 format
+brew install ffmpeg
+ffmpeg -version
+yt-dlp -f 140 -x --audio-format mp3 --audio-quality 0 "[URL link]"
 ```
 
 ---
